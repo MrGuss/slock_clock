@@ -265,7 +265,7 @@ static void *displayClock(void *arguments)
 			XClearWindow(dpy, locks[screen]->win);
 			writeclock(dpy, locks[screen]->win, screen);
 		}
-		sleep(60);
+		sleep(sleepTime);
 	}
 	return 0;
 }

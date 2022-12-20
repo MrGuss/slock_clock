@@ -14,12 +14,15 @@ static const int failonclear = 1;
 static const char * text_color = "#ffffff";
 /* text size (must be a valid size) */
 static const char * font_name = "-misc-hack-bold-i-normal--0-0-0-0-m-0-koi8-uni";
+/* period for calling PerMessage function in seconds*/
+static const int sleepTime = 1;
+
 
 /*Enable blur*/
-#define BLUR
+#define PIXELATION
 /*Set blur radius*/
 static const int blurRadius=5;
 /*Enable Pixelation*/
 //#define PIXELATION
 /*Set pixelation radius*/
-static const int pixelSize=0;
+static const int pixelSize=5;
