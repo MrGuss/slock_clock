@@ -20,7 +20,6 @@
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
 #include <Imlib2.h>
-#include <time.h>
 #include <pthread.h>
 #include <stdbool.h>
 
@@ -137,9 +136,7 @@ writeclock(Display *dpy, Window win, int screen)
 	 * Start formatting and drawing text
 	 */
 
-	time_t rawtime;
-	time(&rawtime);
-	char *message = asctime(localtime(&rawtime));
+	char *message = PerMessage();
 	len = strlen(message);
 
 	/* Max max line length (cut at '\n') */
