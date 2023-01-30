@@ -2,8 +2,8 @@ slock - simple screen locker
 ============================
 simple screen locker utility for X.
 This one include applyed blur and message patches.
-Last one was modified to update message periodically from 
-PerMessage function.
+Message patch modified to show time, or anything that it can get
+from PerMessage function
 
 Requirements
 ------------
